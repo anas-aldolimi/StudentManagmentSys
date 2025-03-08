@@ -62,8 +62,7 @@ namespace FirstClassExample
 
         private void SearchStudents_Click(object sender, EventArgs e)
         {
-            PanelContentReplacer(1);
-            MessageBox.Show("This feature is cominng soon");
+            PanelContentReplacer(2);
         }
         // End of button logic
         //*******************************************************
@@ -85,6 +84,10 @@ namespace FirstClassExample
             if(FormCode == 0)
             {
                 form = new AddStudent();
+            }
+            else if (FormCode == 2)
+            {
+                form = new ManageStudent();
             }
             else
             {
